@@ -26,6 +26,12 @@ public class Gift {
     public Gift(String name, String url) {
         this.name = name;
         this.url = url;
+        reserved = false;
+        reserver = null;
+    }
+
+    public long getId() {
+        return id;
     }
 
     public String getName() {
