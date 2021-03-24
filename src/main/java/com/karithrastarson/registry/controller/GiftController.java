@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping(path = "/register")
 public class GiftController {
@@ -57,11 +58,14 @@ public class GiftController {
         return new ResponseEntity<>("Reservation removed", HttpStatus.ACCEPTED);
     }
 
-
     /**
      * Get all items in registry
      * @return all items in registry
+     *+
+     *
+     *
      */
+
     @GetMapping(path = "")
     public @ResponseBody
     ResponseEntity<List<Gift>> getRegistry() {
