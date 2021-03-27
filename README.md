@@ -1,4 +1,4 @@
-# wedding-registry
+# Wedding Registry
 
 Web App for wedding registry. Used to track the items, and reserve for purchase.
 
