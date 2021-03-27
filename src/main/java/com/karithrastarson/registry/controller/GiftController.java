@@ -3,7 +3,9 @@ package com.karithrastarson.registry.controller;
 import com.karithrastarson.registry.entity.Gift;
 import com.karithrastarson.registry.exception.NoGiftFoundException;
 import com.karithrastarson.registry.service.GiftService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Description;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +25,7 @@ public class GiftController {
      *
      * @return Confirmation message
      */
+    @Tag(name = "Registry")
     @PostMapping(path = "")
     public @ResponseBody
     ResponseEntity<String> addGift(@RequestBody GiftItem item) {
@@ -35,6 +38,7 @@ public class GiftController {
      *
      * @return Confirmation message
      */
+    @Tag(name = "Registry")
     @PostMapping(path = "/{userId}")
     public @ResponseBody
     ResponseEntity<String> reserveGift(@RequestBody GiftItem item, @PathVariable("userId") String userId) {
@@ -51,25 +55,35 @@ public class GiftController {
      *
      * @return Confirmation message
      */
+    @Tag(name = "Registry")
     @DeleteMapping(path = "/{userId}")
     public @ResponseBody
     ResponseEntity<String> unReserveGift(@RequestBody GiftItem item, @PathVariable("userId") String userId) {
-        giftService.unReserveItem(item.getName(), userId);
+        try {
+            giftService.unReserveItem(item.getName(), userId);
+        } catch (NoGiftFoundException e) {
+            return new ResponseEntity(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
         return new ResponseEntity<>("Reservation removed", HttpStatus.ACCEPTED);
     }
 
     /**
      * Get all items in registry
-     * @return all items in registry
-     *+
      *
+     * @return all items in registry,
+     * that are not reserved
      *
      */
-
+    @Tag(name = "Registry")
     @GetMapping(path = "")
     public @ResponseBody
     ResponseEntity<List<Gift>> getRegistry() {
-        List<Gift> items = giftService.getAllItems();
+        List<Gift> items;
+        try {
+            items = giftService.getAllItems();
+        } catch (NoGiftFoundException e) {
+            return new ResponseEntity(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
         return new ResponseEntity<>(items, HttpStatus.OK);
     }
 
@@ -78,10 +92,14 @@ public class GiftController {
      *
      * @return Confirmation message
      */
-    @DeleteMapping(path = "")
+    @Tag(name = "Registry")
     public @ResponseBody
     ResponseEntity<String> deleteItem(@RequestBody GiftItem item) {
-        giftService.removeItem(item.getName(), item.getUrl(), item.getCount());
+        try {
+            giftService.removeItem(item.getName(), item.getUrl(), item.getCount());
+        } catch (NoGiftFoundException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
         return new ResponseEntity<>("Gift removed from database", HttpStatus.ACCEPTED);
     }
 
@@ -90,9 +108,7 @@ public class GiftController {
         private String url;
         private int count;
 
-        public GiftItem() {
-
-        }
+        public GiftItem() {}
 
         public String getName() {
             return name;

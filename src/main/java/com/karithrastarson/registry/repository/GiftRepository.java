@@ -10,6 +10,8 @@ import java.util.List;
 public interface GiftRepository extends CrudRepository<Gift, Long> {
     List<Gift> findByNameAndReserved(String name, boolean reserved);
 
+    List<Gift> findByReserved(boolean reserved);
+
     List<Gift> findByNameAndReserver(String name, String reserver);
 
     List<Gift> findByNameAndUrl(String name, String url);

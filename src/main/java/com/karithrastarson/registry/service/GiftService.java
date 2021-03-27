@@ -15,13 +15,14 @@ public class GiftService {
     @Autowired
     GiftRepository giftRepository;
 
-    public List<Gift> getAllItems() {
-        Iterable<Gift> results = giftRepository.findAll();
+    public List<Gift> getAllItems() throws NoGiftFoundException {
+        List<Gift> results = giftRepository.findByReserved(false);
 
-        List<Gift> list = new ArrayList<Gift>();
-        results.forEach(list::add);
+        if (results.isEmpty()) {
+            throw new NoGiftFoundException("No available gift found in registry");
+        }
 
-        return list;
+        return results;
     }
     public void addManyItems(String name, String url, int count) {
         for (int i = 0; i < count; i++) {
@@ -33,8 +34,11 @@ public class GiftService {
         giftRepository.save(new Gift(name, url));
     }
 
-    public void removeItem(String name, String url, int count) {
+    public void removeItem(String name, String url, int count) throws NoGiftFoundException {
         List<Gift> items = giftRepository.findByNameAndUrl(name, url);
+        if (items.isEmpty()) {
+            throw new NoGiftFoundException("No gift found with name " + name);
+        }
         for (int i = 0; i < count; i++) {
             giftRepository.delete(items.get(i));
         }
@@ -51,10 +55,10 @@ public class GiftService {
         giftRepository.save(gift);
     }
 
-    public void unReserveItem(String name, String userId) {
+    public void unReserveItem(String name, String userId) throws NoGiftFoundException {
         List<Gift> results = giftRepository.findByNameAndReserver(name, userId);
         if (results.isEmpty()) {
-            return;
+            throw new NoGiftFoundException("No gift found with name " + name);
         }
         for (Gift gift : results) {
             gift.setReserver(null);
