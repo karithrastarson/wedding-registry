@@ -93,6 +93,7 @@ public class GiftController {
      * @return Confirmation message
      */
     @Tag(name = "Registry")
+    @DeleteMapping(path = "")
     public @ResponseBody
     ResponseEntity<String> deleteItem(@RequestBody GiftItem item) {
         try {
