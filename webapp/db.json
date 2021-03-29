@@ -1,0 +1,186 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Brauðrist",
+      "url": "https://ht.is/product/braudrist-2sneida-raud",
+      "reserved": true,
+      "reserver": "gunnar@gunnar.is"
+    },
+    {
+      "id": 2,
+      "name": "Pottur",
+      "url": "https://www.lifoglist.is/shop/pottar-ponnur/le-creuset/pottar-28-cm/pottur-28-cm-cerise/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 3,
+      "name": "Djúpur Diskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/djupir-diskar/bitz-pastad-gastro-sv-grar-11197/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 4,
+      "name": "Djúpur Diskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/djupir-diskar/bitz-pastad-gastro-sv-grar-11197/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 5,
+      "name": "Djúpur Diskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/djupir-diskar/bitz-pastad-gastro-sv-grar-11197/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 6,
+      "name": "Djúpur Diskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/djupir-diskar/bitz-pastad-gastro-sv-grar-11197/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 7,
+      "name": "Djúpur Diskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/djupir-diskar/bitz-pastad-gastro-sv-grar-11197/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 8,
+      "name": "Djúpur Diskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/djupir-diskar/bitz-pastad-gastro-sv-grar-11197/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 9,
+      "name": "Djúpur Diskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/djupir-diskar/bitz-pastad-gastro-sv-grar-11197/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 10,
+      "name": "Djúpur Diskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/djupir-diskar/bitz-pastad-gastro-sv-grar-11197/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 11,
+      "name": "Matardiskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/matardiskar/diskur-27cm-gastro-821253-sv-d-bla-bitz/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 12,
+      "name": "Matardiskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/matardiskar/diskur-27cm-gastro-821253-sv-d-bla-bitz/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 13,
+      "name": "Matardiskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/matardiskar/diskur-27cm-gastro-821253-sv-d-bla-bitz/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 14,
+      "name": "Matardiskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/matardiskar/diskur-27cm-gastro-821253-sv-d-bla-bitz/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 15,
+      "name": "Matardiskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/matardiskar/diskur-27cm-gastro-821253-sv-d-bla-bitz/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 16,
+      "name": "Matardiskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/matardiskar/diskur-27cm-gastro-821253-sv-d-bla-bitz/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 17,
+      "name": "Matardiskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/matardiskar/diskur-27cm-gastro-821253-sv-d-bla-bitz/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 18,
+      "name": "Matardiskur",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/matarstell-hlutir/matardiskar/diskur-27cm-gastro-821253-sv-d-bla-bitz/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 19,
+      "name": "Bjórglös",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/glos/glasaseriur/bitz-glos/bjorglos-40-cl-18-stykki/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 20,
+      "name": "Bjórglös",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/glos/glasaseriur/bitz-glos/bjorglos-40-cl-18-stykki/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 21,
+      "name": "Bjórglös",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/glos/glasaseriur/bitz-glos/bjorglos-40-cl-18-stykki/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 22,
+      "name": "Bjórglös",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/glos/glasaseriur/bitz-glos/bjorglos-40-cl-18-stykki/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 23,
+      "name": "Bjórglös",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/glos/glasaseriur/bitz-glos/bjorglos-40-cl-18-stykki/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 24,
+      "name": "Bjórglös",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/glos/glasaseriur/bitz-glos/bjorglos-40-cl-18-stykki/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 25,
+      "name": "Bjórglös",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/glos/glasaseriur/bitz-glos/bjorglos-40-cl-18-stykki/",
+      "reserved": false,
+      "reserver": null
+    },
+    {
+      "id": 26,
+      "name": "Bjórglös",
+      "url": "https://www.lifoglist.is/shop/bordbunadur/glos/glasaseriur/bitz-glos/bjorglos-40-cl-18-stykki/",
+      "reserved": false,
+      "reserver": null
+    }
+  ]
+}
