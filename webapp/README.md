@@ -1,10 +1,27 @@
 # Vue Web App
 
 ## Running the app
-1. Follow the instructions in parent folder,
-to start the docker container and the web service.
-   Instructions found [here](../README.md).
 
-2. Run ``npm start`` this folder.
+Install dependencies
 
-3. Open ``localhost:3000`` to see the web app.
+```
+npm i
+```
+
+Install JSON Server:
+
+```
+npm install -g json-server
+```
+
+Run the server
+
+```
+json-server --watch db.json
+```
+
+Start the app
+
+```
+npm run dev
+```
